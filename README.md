@@ -1,0 +1,1 @@
+# outstatic-log
