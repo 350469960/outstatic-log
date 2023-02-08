@@ -1,0 +1,45 @@
+{
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**"]
+    },
+    "lint": {
+      "outputs": []
+    },
+    "start": {
+      "cache": false
+    },
+    "dev": {
+      "cache": false
+    },
+    "clean": {
+      "cache": false
+    },
+    "test": {
+      "cache": false
+    },
+    "typecheck": {
+      "cache": false
+    },
+    "web": {
+      "dependsOn": [],
+      "env": ["NEXT_PUBLIC_GA_ID"]
+    },
+    "outstatic": {
+      "dependsOn": [],
+      "env": [
+        "NODE_ENV",
+        "OST_CONTENT_PATH",
+        "OST_GITHUB_ID",
+        "OST_GITHUB_SECRET",
+        "OST_MONOREPO_PATH",
+        "OST_REPO_BRANCH",
+        "OST_REPO_SLUG",
+        "OST_REPO_OWNER",
+        "OST_TOKEN_SECRET",
+        "VERCEL_GIT_REPO_SLUG"
+      ]
+    }
+  }
+}

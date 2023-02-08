@@ -1,1 +1,1 @@
-# outstatic-log111
+./packages/outstatic/README.md
